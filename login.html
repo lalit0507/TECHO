@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+
+        <!-- Form Heading -->
+        <h2>Login</h2>
+
+        <!-- Login Form -->
+        <form id="loginForm" action="login.php" method="POST" onsubmit="return validateLogin()">
+            <!-- Email/Phone Input -->
+            <div class="form-group">
+                <label for="loginEmailPhone">Email or Phone Number</label>
+                <input type="text" id="loginEmailPhone" name="username" placeholder="Enter your email or phone number" required>
+                <span id="loginEmailPhoneError" class="error"></span>
+            </div>
+
+            <!-- Password Input -->
+            <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" name="password" placeholder="Enter your password" required>
+                <span id="loginPasswordError" class="error"></span>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn">Login</button>
+        </form>
+
+        <!-- Registration Link -->
+        <p class="login-link">Don't have an account?<a href="index.html">Create New Account</a></p>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

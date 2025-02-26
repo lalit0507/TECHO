@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Tech Company</title>
+    <link rel="stylesheet" href="stylehome.css">
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="logo.png" alt="Tech Company Logo">
+            </div>
+            <!-- Welcome Message -->
+            <div class="welcome-message">
+                <h1>Welcome to TECHO Company</h1>
+                <p>Innovating the Future, Today</p>
+            </div>
+        </div>
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>
+                Tech Company is a leading innovator in the technology industry, dedicated to providing cutting-edge
+                solutions for businesses and individuals. Our mission is to empower our clients with the tools and
+                technologies they need to succeed in a rapidly evolving digital world.
+            </p>
+            <p>
+                Founded in 2010, Tech Company has grown from a small startup to a global leader in technology solutions.
+                Our journey began with a simple goal: to make technology accessible and beneficial for everyone. Over
+                the years, we have worked with thousands of clients across various industries, helping them transform
+                their businesses through innovative technology.
+            </p>
+            <p>
+                At Tech Company, we believe in the power of collaboration. Our team of experienced professionals works
+                closely with clients to understand their unique challenges and deliver tailored solutions that drive real
+                results. Whether you're a startup looking to build your first app or a large enterprise seeking to
+                optimize your IT infrastructure, we have the expertise to help you succeed.
+            </p>
+            <p>
+                Our core values—innovation, integrity, and excellence—guide everything we do. We are committed to
+                staying ahead of the curve by continuously investing in research and development. This allows us to offer
+                the latest technologies and best practices to our clients.
+            </p>
+            <p>
+                In addition to our technical expertise, we pride ourselves on our customer-centric approach. We
+                understand that every client is unique, and we strive to build long-term relationships based on trust and
+                mutual success. Our dedicated support team is always available to assist you, ensuring that you get the
+                most out of our solutions.
+            </p>
+            <p>
+                As we look to the future, we remain focused on our mission to innovate and inspire. We are excited to
+                continue pushing the boundaries of what's possible with technology and to help our clients achieve their
+                goals in an increasingly digital world.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-list">
+                <div class="service-item">
+                    <i class="fas fa-code"></i>
+                    <h3>Software Development</h3>
+                    <p>We build scalable and efficient software solutions tailored to your business needs.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Cloud Computing Solutions</h3>
+                    <p>Harness the power of the cloud with our secure and reliable cloud services.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-laptop"></i>
+                    <h3>IT Consulting</h3>
+                    <p>Expert advice and strategies to optimize your IT infrastructure.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Cybersecurity</h3>
+                    <p>Protect your business from cyber threats with our advanced security solutions.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Data Analytics</h3>
+                    <p>Unlock insights from your data with our powerful analytics tools.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-list">
+                <div class="testimonial-item">
+                    <p>"Tech Company transformed our business with their innovative solutions. Highly recommended!"</p>
+                    <span>- Hari Pal, CEO of XYZ Corp</span>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Their team is professional, knowledgeable, and always delivers on time."</p>
+                    <span>- Shyam Lal, CTO of ABC Inc</span>
+                </div>
+                <div class="testimonial-item">
+                    <p>"The best tech partner we've ever worked with. Truly exceptional service!"</p>
+                    <span>- Ram Lal, Founder of 123 Tech</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contactForm" action="contact.php" method="POST" onsubmit="return validateContactForm()">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Enter your message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Tech Company. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <button id="logoutButton" onclick="window.location.href='login.html'">Logout</button>
+        </div>
+    </footer>
+
+    <script>
+        function validateContactForm() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (name === "" || email === "" || message === "") {
+                alert("Please fill out all fields.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+
+</html>
